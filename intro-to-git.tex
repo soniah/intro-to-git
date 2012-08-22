@@ -96,45 +96,6 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 \textcolor{code-red}{#1}%
 }
 
-\newcommand{\GitCmdTable}[4]{
-{\tiny \tt
-\begin{tabular}{llll}
-#2{add}              & #4{fast-export}       & #4{merge-one-file} & #3{revert}             \\
-#3{am}               & #4{fast-import}       & #4{merge-resolve}  & #2{rm}                 \\
-#3{annotate}         & #2{fetch}             & #4{merge-subtree}  & #3{send-email}         \\
-#3{apply}            & #4{fetch-pack}        & #4{merge-tree}     & #4{send-pack}          \\
-#4{archimport}       & #4{filter-branch}     & #1{mergetool}      & #4{sh-setup}           \\
-#3{archive}          & #4{fmt-merge-msg}     & #4{mktag}          & #1{shell}              \\
-#3{bisect}           & #4{for-each-ref}      & #4{mktree}         & #3{shortlog}           \\
-#3{blame}            & #3{format-patch}      & #2{mv}             & #2{show}               \\
-#2{branch}           & #4{fsck}              & #4{name-rev}       & #3{show-branch}        \\
-#3{bundle}           & #4{fsck-objects}      & #4{pack-objects}   & #4{show-index}         \\
-#4{cat-file}         & #2{gc}                & #4{pack-redundant} & #4{show-ref}           \\
-#4{check-attr}       & #4{get-tar-commit-id} & #4{pack-refs}      & #2{stash}              \\
-#4{check-ref-format} & #2{grep}              & #4{parse-remote}   & #2{status}             \\
-#2{checkout}         & #1{gui}               & #4{patch-id}       & #4{stripspace}         \\
-#4{checkout-index}   & #4{hash-object}       & #4{peek-remote}    & #3{submodule}          \\
-#3{cherry}           & #4{http-fetch}        & #4{prune}          & #3{svn}                \\
-#3{cherry-pick}      & #4{http-push}         & #4{prune-packed}   & #4{symbolic-ref}       \\
-#1{citool}           & #4{imap-send}         & #2{pull}           & #2{tag}                \\
-#3{clean}            & #4{index-pack}        & #2{push}           & #4{tar-tree}           \\
-#2{clone}            & #2{init}              & #3{quiltimport}    & #4{unpack-file}        \\
-#2{commit}           & #4{init-db}           & #4{read-tree}      & #4{unpack-objects}     \\
-#4{commit-tree}      & #3{instaweb}          & #2{rebase}         & #4{update-index}       \\
-#2{config}           & #2{log}               & #4{receive-pack}   & #4{update-ref}         \\
-#4{count-objects}    & #4{lost-found}        & #3{reflog}         & #3{update-server-info} \\
-#4{cvsexportcommit}  & #4{ls-files}          & #4{relink}         & #4{upload-archive}     \\
-#4{cvsimport}        & #4{ls-remote}         & #2{remote}         & #4{upload-pack}        \\
-#4{cvsserver}        & #4{ls-tree}           & #4{repack}         & #4{var}                \\
-#4{daemon}           & #4{mailinfo}          & #4{repo-config}    & #4{verify-pack}        \\
-#3{describe}         & #4{mailsplit}         & #4{request-pull}   & #4{verify-tag}         \\
-#2{diff}             & #2{merge}             & #4{rerere}         & #3{whatchanged}        \\
-#4{diff-files}       & #4{merge-base}        & #2{reset}          & #4{write-tree}         \\
-#4{diff-index}       & #4{merge-file}        & #4{rev-list}       &                        \\
-#4{diff-tree}        & #4{merge-index}       & #4{rev-parse}      & #1{gitk}               \\
-\end{tabular}
-}}
-
 \begin{document}
 % =====================================================================
 \label{header}\hypertarget{header}{}
@@ -994,47 +955,6 @@ Decentralized
 \mysection{Using GIT}{_using_git}
 % =====================================================================
 \mysubsection{Commands}{using:commands}
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Git commands}
-
-\CMD{\$ git 
-\textcolor{gray}{<options>}
-<command>
-\textcolor{gray}{<options>}}
-
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}[fragile]
-\frametitle{Git commands (137)}
-\GitCmdTable{\ttt}{\ttt}{\ttt}{\ttt}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}[fragile]
-\frametitle{Every day use\ldots}
-\GitCmdTable{\hide}{\CMD}{\hide}{\hide}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}[fragile]
-\frametitle{Some GUI tools\ldots}
-\GitCmdTable{\gui}{\CMD}{\hide}{\hide}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}[fragile]
-\frametitle{Occasional use\ldots}
-\GitCmdTable{\gui}{\CMD}{\cmd}{\hide}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}[fragile]
-\frametitle{And the plumbing\ldots}
-\GitCmdTable{\gui}{\CMD}{\cmd}{\fnt}
-\end{frame}
-
 % ---------------------------------------------------------------------
 \begin{frame}
 \frametitle{Help}
