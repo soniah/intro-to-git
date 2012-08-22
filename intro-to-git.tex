@@ -199,151 +199,6 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Decentralization}
-\includegraphics[width=\linewidth]{cloning-1-upstream.eps}
-\begin{itemize}
-        \item public repository
-\end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Decentralization}
-\includegraphics[width=\linewidth]{cloning-2-local.eps}
-\begin{itemize}
-        \item make a local clone
-\end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Decentralization}
-\includegraphics[width=\linewidth]{cloning-3-topic.eps}
-\begin{itemize}
-        \item local cloning is lighweight
-\end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Decentralization}
-\includegraphics[width=\linewidth]{cloning-4-push.eps}
-\begin{itemize}
-        \item push changes between any repositories
-\end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Decentralization}
-\includegraphics[width=\linewidth]{cloning-5-publish.eps}
-\begin{itemize}
-        \item publish changes to public server
-\end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Decentralization}
-\includegraphics[width=\linewidth]{cloning-6-trusted.eps}
-\begin{itemize}
-        \item share changes with trusted peers
-\end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Is Decentralization any good?}
-
-\begin{itemize}
-        \item non-intrusive micro-commits
-        \item detached operation
-        \item no single point of failure
-        \item backups are trivial
-\end{itemize}
-\end{frame}
-
-% =====================================================================
-\mysubsection{SCM components}{concepts:components}
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{SCM components}
-\begin{columns}[t]
-        \begin{column}[T]{.5\textwidth}
-                Working tree
-                \begin{itemize}
-                        \item directories
-                        \item files
-                \end{itemize}
-
-        \end{column}
-        \begin{column}[T]{.5\textwidth}
-                \vspace{.2\textheight}
-                \includegraphics[width=\linewidth]{repo-working-tree.eps}
-        \end{column}
-\end{columns}
-
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{SCM components}
-\begin{columns}[t]
-        \begin{column}[T]{.5\textwidth}
-                Repository contents
-                \begin{itemize}
-                        \item files
-                \end{itemize}
-        \end{column}
-        \begin{column}[T]{.5\textwidth}
-                \vspace{.2\textheight}
-                \includegraphics[width=\linewidth]{repo-blob.eps}
-        \end{column}
-\end{columns}
-
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{SCM components}
-\begin{columns}[t]
-        \begin{column}[T]{.5\textwidth}
-                Repository contents
-                \begin{itemize}
-                        \item files
-                        \item commits
-                \end{itemize}
-        \end{column}
-        \begin{column}[T]{.5\textwidth}
-                \vspace{.2\textheight}
-                \includegraphics[width=\linewidth]{repo-commit.eps}
-        \end{column}
-\end{columns}
-
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{SCM components}
-\begin{columns}[t]
-        \begin{column}[T]{.5\textwidth}
-                Repository contents
-                \begin{itemize}
-                        \item files
-                        \item commits
-                        \item ancestry
-                \end{itemize}
-        \end{column}
-        \begin{column}[T]{.5\textwidth}
-                \vspace{.2\textheight}
-                \includegraphics[width=\linewidth]{repo-ancestry.eps}
-        \end{column}
-\end{columns}
-
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
 \frametitle{SCM components}
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
@@ -418,25 +273,9 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 
 \end{frame}
 
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{SCM components}
-\begin{columns}[t]
-        \begin{column}[T]{.5\textwidth}
-                Index
-                \begin{itemize}
-                        \item ``staging area''
-                        \item what is to be committed
-                \end{itemize}
-        \end{column}
-        \begin{column}[T]{.5\textwidth}
-                \vspace{.2\textheight}
-                \includegraphics[width=\linewidth]{repo-index.eps}
-        \end{column}
-\end{columns}
 
-\end{frame}
-
+% =====================================================================
+\mysubsection{SCM components}{concepts:components}
 % =====================================================================
 \mysubsection{SCM operations}{concepts:operations}
 
@@ -2013,6 +1852,72 @@ cannot switch branches.}
 
 % =====================================================================
 \mysubsection{Remotes}{using:remotes}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Decentralization}
+\includegraphics[width=\linewidth]{cloning-1-upstream.eps}
+\begin{itemize}
+        \item public repository
+\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Decentralization}
+\includegraphics[width=\linewidth]{cloning-2-local.eps}
+\begin{itemize}
+        \item make a local clone
+\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Decentralization}
+\includegraphics[width=\linewidth]{cloning-3-topic.eps}
+\begin{itemize}
+        \item local cloning is lighweight
+\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Decentralization}
+\includegraphics[width=\linewidth]{cloning-4-push.eps}
+\begin{itemize}
+        \item push changes between any repositories
+\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Decentralization}
+\includegraphics[width=\linewidth]{cloning-5-publish.eps}
+\begin{itemize}
+        \item publish changes to public server
+\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Decentralization}
+\includegraphics[width=\linewidth]{cloning-6-trusted.eps}
+\begin{itemize}
+        \item share changes with trusted peers
+\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Is Decentralization any good?}
+
+\begin{itemize}
+        \item non-intrusive micro-commits
+        \item detached operation
+        \item no single point of failure
+        \item backups are trivial
+\end{itemize}
+\end{frame}
 
 % ---------------------------------------------------------------------
 \begin{frame}
