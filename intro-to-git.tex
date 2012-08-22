@@ -333,19 +333,19 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 
 \end{frame}
 
+% =====================================================================
+\mysubsection{Configuraton}{using:configuration}
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Configuration}
+\frametitle{Global Configuration}
 
 \CMD{\$HOME/.gitconfig}
 
-\pause{}
 \vspace{.1\textheight}
 
 \CMD{\$ git config {-}-global user.name "Your Name"} \\
 \CMD{\$ git config {-}-global user.email you@domain.tld}
 
-\pause{}
 \vspace{.1\textheight}
 
 \CMD{\$ git config {-}-global color.pager true} \\
@@ -354,29 +354,14 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 \end{frame}
 
 % ---------------------------------------------------------------------
-\begin{frame}[fragile]
-\frametitle{Configuration}
+\begin{frame}
+\frametitle{Repo Configuration}
 
-\CMD{\$ cat .gitconfig}
-{\small
-\begin{Verbatim}[commandchars=\\\{\}]
-[user]
-        name = "Bart Trojanowski"
-        email = "bart@jukie.net"
-        signingkey = 2289688F
+\CMD{repo/.git/config}
 
-[core]
-        pager = less -FRSX
-        editor = vim
+\vspace{.1\textheight}
 
-[color]
-        ui = auto
-
-[merge]
-        tool = vimdiff
-
-\end{Verbatim}
-}
+\CMD{\$ git config user.email you@company.com}
 
 \end{frame}
 
