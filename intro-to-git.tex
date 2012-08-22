@@ -364,14 +364,14 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 \end{frame}
 
 % =====================================================================
-\mysubsection{Commit}{using:commit}
+\mysubsection{Adding Files}{using:addingfiles}
 % ---------------------------------------------------------------------
 \begin{frame}
 \frametitle{Bootstrapping}
 
 \CMD{\$ git init} \\
 \begin{itemize}
-        \item ran in project workspace
+        \item run in project workspace
         \item creates \CMD{.git} directory
 \end{itemize}
 \end{frame}
@@ -380,23 +380,38 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 \begin{frame}
 \frametitle{Staging}
 
-What to commit?
+\includegraphics[width=\linewidth]{struct-03.eps}
+\vspace{\baselineskip}
+\begin{center}
+        ``staging''
 
-\pause{}
+        \vspace{\baselineskip}
+        \CMD{add} \\
+        \CMD{remove} \\
+        \CMD{rename}
+\end{center}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Staging}
+
+What to stage?
+
 \vspace{.1\textheight}
 
 \begin{itemize}
         \item additions \\
                 \CMD{\$ git add file} \\
-                \CMD{\$ git add .}
+                \CMD{\$ git add .} \\
+                \CMD{\$ git add -p}
 
-                \pause{}
                 \vspace{.1\textheight}
 
         \item removal \\
                 \CMD{\$ git rm file}
 
-                \pause{}
                 \vspace{.1\textheight}
 
         \item renames \\
@@ -417,6 +432,21 @@ What to commit?
 
 % ---------------------------------------------------------------------
 \begin{frame}
+\frametitle{Structure}
+
+\includegraphics[width=\linewidth]{struct-04.eps}
+\vspace{\baselineskip}
+\begin{center}
+        ``committing''
+
+        \vspace{\baselineskip}
+        \CMD{commit}
+\end{center}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
 \frametitle{Committing}
 
 \CMD{\$ git commit \fnt{-a} -m``some comment''} \\
@@ -425,6 +455,8 @@ What to commit?
 \end{itemize}
 \end{frame}
 
+% =====================================================================
+\mysubsection{Adding Graphically}{using:addinggrapically}
 % ---------------------------------------------------------------------
 \begin{frame}
 \frametitle{Bootstrapping}
