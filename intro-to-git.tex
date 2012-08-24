@@ -367,10 +367,20 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 \CMD{\$ git init} \\
 \begin{itemize}
         \item run in project workspace
-        \item creates \CMD{.git} directory
+        \item creates \CMD{.git} directory \\
         \vspace{.1\textheight}
         \item later: bare and remote repos...
 \end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Bootstrapping}
+
+\CMD{\$ git status} \\
+\vspace{.1\textheight}
+\CMD{\$ git log} \\
+
 \end{frame}
 
 % =====================================================================
@@ -425,6 +435,7 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 \end{Verbatim}
 
 \vspace{.1\textheight}
+\CMD{\$ git status} \\
 Three states
     \begin{itemize}
             \item tracked \\
@@ -535,21 +546,6 @@ Three states
 
 % =====================================================================
 \mysubsection{Inspection}{using:inspection}
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Repository status}
-
-\CMD{\$ git status}
-
-\vspace{.1\textheight}
-shows\ldots
-\begin{itemize}
-        \item staged
-        \item unstaged
-        \item untracked
-\end{itemize}
-\end{frame}
-
 % ---------------------------------------------------------------------
 \begin{frame}
 \frametitle{Diffs}
