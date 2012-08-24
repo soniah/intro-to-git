@@ -473,9 +473,23 @@ Three states
 \begin{frame}
 \frametitle{Committing}
 
-\CMD{\$ git commit \fnt{-a} -m ``some comment''} \\
+\CMD{\$ git commit -m ``some comment''} \\
 \begin{itemize}
-        \item will create a commit of \faint{all or} only staged items
+        \item commit staged items
+\end{itemize}
+
+\vspace{.1\textheight}
+\CMD{\$ git commit -a -m ``some comment''} \\
+\begin{itemize}
+        \item ``Nuclear Option'' \\
+        \item commits unstaged items too!
+\end{itemize}
+
+\vspace{.1\textheight}
+\CMD{\$ git commit -{}-amend} \\
+\begin{itemize}
+        \item ``Oops'' \\
+        \item Rewriting History
 \end{itemize}
 \end{frame}
 
