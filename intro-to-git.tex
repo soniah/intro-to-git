@@ -303,10 +303,11 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 \end{frame}
 
 % =====================================================================
-\mysubsection{Help}{using:help}
+\mysubsection{House Keeping}{using:housekeeping}
+% =====================================================================
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Help}
+\frametitle{Getting Help}
 
 \CMD{git help}
 \begin{itemize}
@@ -331,40 +332,34 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 
 \end{frame}
 
-% =====================================================================
-\mysubsection{Configuraton}{using:configuration}
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Global Configuration}
+\frametitle{Configuration}
 
-\CMD{\$HOME/.gitconfig}
+\begin{itemize}
+    \item Global
+\end{itemize}
 
-\vspace{.1\textheight}
-
+\CMD{\$HOME/.gitconfig} \\
 \CMD{\$ git config {-}-global user.name "Your Name"} \\
 \CMD{\$ git config {-}-global user.email you@domain.tld}
 
-\vspace{.1\textheight}
+\begin{itemize}
+    \item Repo
+\end{itemize}
+
+\CMD{repo/.git/config} \\
+\CMD{\$ git config user.email you@company.com}
+
+\begin{itemize}
+    \item Useful
+\end{itemize}
 
 \CMD{\$ git config {-}-global color.pager true} \\
 \CMD{\$ git config {-}-global color.ui auto}
 
 \end{frame}
 
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Repo Configuration}
-
-\CMD{repo/.git/config}
-
-\vspace{.1\textheight}
-
-\CMD{\$ git config user.email you@company.com}
-
-\end{frame}
-
-% =====================================================================
-\mysubsection{Staging}{using:staging}
 % ---------------------------------------------------------------------
 \begin{frame}
 \frametitle{Bootstrapping}
@@ -378,6 +373,8 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 \end{itemize}
 \end{frame}
 
+% =====================================================================
+\mysubsection{Staging}{using:staging}
 % ---------------------------------------------------------------------
 \begin{frame}
 \frametitle{Staging}
