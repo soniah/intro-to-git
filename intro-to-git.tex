@@ -503,13 +503,11 @@ Three states
 \begin{frame}
 \frametitle{Stashing}
 \begin{itemize}
-        \item you're hacking
-                \pause{}
+        \item need to work on something else
                 \vspace{\baselineskip}
         \item got debug code you don't want to commit
-                \pause{}
                 \vspace{\baselineskip}
-        \item need to work on something else
+        \item dead end code
 \end{itemize}
 \end{frame}
 
@@ -517,16 +515,23 @@ Three states
 \begin{frame}
 \frametitle{Stashing}
 \begin{itemize}
-        \item \CMD{git stash ``description''}
-                \pause{}
+        \item \CMD{git stash}
                 \vspace{\baselineskip}
         \item do that other thing
-                \pause{}
                 \vspace{\baselineskip}
-        \item \CMD{git stash apply}
+        \item \CMD{git stash list} \\
+        \item \CMD{git stash pop}
+        \item \CMD{git stash apply stash@\{3\} }
 \end{itemize}
 \end{frame}
 
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Stashing Branches}
+\begin{itemize}
+        \item \CMD{git stash branch foo stash@\{2\} }
+\end{itemize}
+\end{frame}
 
 % =====================================================================
 \mysubsection{Inspection}{using:inspection}
