@@ -473,26 +473,35 @@ Three states
 \begin{frame}
 \frametitle{Diffs - Basic}
 
-\CMD{\$ git diff}
-\begin{itemize}
-        \item changes between working files and index
-\end{itemize}
+\begin{columns}[t]
+        \begin{column}[T]{.5\textwidth}
+            \CMD{\$ git diff}
+            \begin{itemize}
+                    \item changes between working files and index
+            \end{itemize}
 
-\vspace{.1\textheight}
+            \vspace{.1\textheight}
 
-\CMD{\$ git diff {-}-cached} \\
-\CMD{\$ git diff {-}-staged}
-\begin{itemize}
-        \item changes between index and HEAD
-\end{itemize}
+            \CMD{\$ git diff {-}-cached} \\
+            \CMD{\$ git diff {-}-staged}
+            \begin{itemize}
+                    \item changes between index and HEAD
+            \end{itemize}
 
-\vspace{.1\textheight}
+            \vspace{.1\textheight}
 
-\CMD{\$ git diff HEAD}
-\begin{itemize}
-        \item changes between working files and HEAD \\
-        \item ie cumulative
-\end{itemize}
+            \CMD{\$ git diff HEAD}
+            \begin{itemize}
+                    \item changes between working files and HEAD \\
+                    \item ie cumulative
+            \end{itemize}
+        \end{column}
+        \begin{column}[T]{.5\textwidth}
+                \includegraphics[width=\linewidth]{diffs.eps}
+        \end{column}
+\end{columns}
+
+
 
 \end{frame}
 
