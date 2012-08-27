@@ -562,7 +562,7 @@ lightweight, mutable, disposable
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Structure}
+\frametitle{References}
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
                 References
@@ -975,6 +975,19 @@ cannot switch branches.}
 \begin{frame}
 \frametitle{Merging}
 
+\CMD{\$ git merge <branch> \ldots} \\
+\begin{itemize}
+        \item merge multiple branches
+        \item creates commit with 2+ parents
+        \item can cause \red{conflicts} \\
+                \faint{ie: require user intervention}
+\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Merging}
+
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
                 {\small
@@ -994,17 +1007,7 @@ cannot switch branches.}
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
                 {\small
-                \CMD{\$ git checkout master} \\
-
                 \CMD{\$ git merge bug-fix} \\
-
-
-                \vspace{\baselineskip}
-                \faint{or}
-                \vspace{\baselineskip}
-
-                \CMD{\$ git checkout master} \\
-                \CMD{\$ git reset {-}-hard bug-fix} \\
                 }
         \end{column}
         \begin{column}[T]{.5\textwidth}
@@ -1015,19 +1018,12 @@ cannot switch branches.}
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Merging}
+\frametitle{Merging - Example 2}
 
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
                 {\small
                 \CMD{\$ git merge wicked} \\
-
-
-                \vspace{\baselineskip}
-
-                \faint{\ldots in case of conflict run} \\
-
-                \CMD{\$ git mergetool} \\
                 }
         \end{column}
         \begin{column}[T]{.5\textwidth}
@@ -1038,24 +1034,11 @@ cannot switch branches.}
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Merging}
-
-\CMD{\$ git merge <branch> \ldots} \\
-\begin{itemize}
-        \item merge multiple branches
-        \item creates commit with 2+ parents
-        \item can cause \red{conflicts} \\
-                \faint{ie: require user intervention}
-\end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Merging}
+\frametitle{Merging - Example 3}
 
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
-                one more example
+                branch one
         \end{column}
         \begin{column}[T]{.5\textwidth}
                 \includegraphics[width=\linewidth]{merging-01.eps}
@@ -1065,7 +1048,7 @@ cannot switch branches.}
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Merging}
+\frametitle{Merging - Example 3}
 
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
@@ -1079,7 +1062,7 @@ cannot switch branches.}
 
 % ---------------------------------------------------------------------
 \begin{frame}[fragile]
-\frametitle{Merging}
+\frametitle{Merging - Example 3}
 
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
@@ -1097,13 +1080,12 @@ cannot switch branches.}
 
 % ---------------------------------------------------------------------
 \begin{frame}[fragile]
-\frametitle{Merging}
+\frametitle{Merging - Example 3}
 
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
                 {\small
                 \begin{Verbatim}[commandchars=\\\{\}]
-\cmd{\$ git checkout -b three two}
 \CMD{\$ git merge one}
                 \end{Verbatim}
                 }
@@ -1116,20 +1098,7 @@ cannot switch branches.}
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Merging}
-
-\begin{columns}[t]
-        \begin{column}[T]{.5\textwidth}
-        \end{column}
-        \begin{column}[T]{.5\textwidth}
-                \includegraphics[width=\linewidth]{merging-05.eps}
-        \end{column}
-\end{columns}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Merging}
+\frametitle{Merging - Example 4 - Octopus}
 
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
@@ -1145,35 +1114,13 @@ cannot switch branches.}
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Merging}
+\frametitle{Merging - Example 4 - Octopus}
 
 \begin{columns}[t]
         \begin{column}[T]{.5\textwidth}
                 {\small
-                \cmd{\$ git checkout three} \\
                 \CMD{\$ git merge one two} \\
                 }
-        \end{column}
-        \begin{column}[T]{.5\textwidth}
-                \includegraphics[width=\linewidth]{merging-07.eps}
-        \end{column}
-\end{columns}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Merging}
-
-\begin{columns}[t]
-        \begin{column}[T]{.5\textwidth}
-                {\small
-                \cmd{\$ git checkout three} \\
-                \CMD{\$ git merge one two} \\
-                }
-                \vspace{.2\textheight}
-                \begin{center}
-                        ``octopus''
-                \end{center}
         \end{column}
         \begin{column}[T]{.5\textwidth}
                 \includegraphics[width=\linewidth]{merging-07.eps}
