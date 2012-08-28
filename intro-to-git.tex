@@ -2421,6 +2421,24 @@ Scenario:
 \vspace{\textheight}
 \end{frame}
 
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing vs Cherrypicking}
+
+\begin{columns}[t]
+        \begin{column}[T]{.5\textwidth}
+                you're on 'wicked'
+                \vspace{\baselineskip}
+                want 'C' into 'wicked'
+        \end{column}
+        \begin{column}[T]{.5\textwidth}
+                \includegraphics[width=\linewidth]{branching-12.eps}
+        \end{column}
+\end{columns}
+\vspace{.05\textheight}
+\CMD{\$ git cherry-pick 45b2d8}
+\end{frame}
+
 % =====================================================================
 \mysubsection{Inspection}{using:inspection}
 % ---------------------------------------------------------------------
