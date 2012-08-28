@@ -2396,6 +2396,31 @@ Scenario:
 
 \end{frame}
 
+% ---------------------------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Working with remotes}
+
+Scenario:
+\begin{itemize}
+        \item 2 laptops - normal repos
+        \item want to push between them
+\end{itemize}
+
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Working with remotes}
+
+\CMD{local\$ git remote add foo ...} \\
+\CMD{local\$ git push foo :dummy} \\
+\vspace{.1\textheight}
+\CMD{remote\$ git checkout target} \\
+\CMD{remote\$ git merge dummy} \\
+\CMD{remote\$ git branch -d dummy} \\
+
+\end{frame}
+
 % =====================================================================
 \mysubsection{Inspection}{using:inspection}
 % ---------------------------------------------------------------------
