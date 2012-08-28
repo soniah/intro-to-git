@@ -1217,212 +1217,6 @@ Hit return to start merge resolution tool (vimdiff):
 \end{frame}
 
 % =====================================================================
-\mysubsection{Rebasing}{using:rebasing}
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing}
-
-\begin{itemize}
-        \item in existing branch
-        \vspace{.1\textheight}
-        \item from a different branch
-\end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing}
-
-\begin{itemize}
-        \item you're rewriting history
-        \item Warning! Warning! Danger, Will Robinson!
-\end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Existing Branch}
-
-\CMD{\$ git rebase -i HEAD tilda 7}
-\begin{itemize}
-        \item start rebase
-\end{itemize}
-
-\vspace{.05\textheight}
-\CMD{\$ git reset HEAD caret} \\
-\CMD{\$ git add -p} \\
-\CMD{\$ git commit -{}-amend}
-\begin{itemize}
-        \item do edits
-\end{itemize}
-
-\vspace{.05\textheight}
-\CMD{\$ git rebase -{}-continue}
-\begin{itemize}
-        \item keep going
-\end{itemize}
-
-\vspace{.05\textheight}
-\CMD{\$ git rebase -{}-abort}
-\begin{itemize}
-        \item made a mistake, start again...
-\end{itemize}
-
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\CMD{\$ git rebase <branch>} \\
-\begin{itemize}
-        \item moves new work onto a new baseline
-        \item can cause \red{conflicts} \\
-                \faint{ie: require user intervention}
-\end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-01.eps}
-\vspace{\baselineskip}
-\begin{center}
-        take two identical trees
-\end{center}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-02.eps}
-\vspace{\baselineskip}
-\begin{flushleft}
-        \CMD{\$ git merge master}
-\end{flushleft}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-03.eps}
-\vspace{\baselineskip}
-\begin{center}
-        that's easy
-\end{center}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-03.eps}
-\vspace{\baselineskip}
-\begin{flushright}
-        \CMD{\$ git rebase master}
-\end{flushright}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-04.eps}
-\vspace{\baselineskip}
-\begin{flushright}
-        \CMD{\$ git rebase master}
-\end{flushright}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-05.eps}
-\vspace{\baselineskip}
-\begin{flushright}
-        \CMD{\$ git rebase master}
-\end{flushright}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-06.eps}
-\vspace{\baselineskip}
-\begin{flushright}
-        \CMD{\$ git rebase master}
-\end{flushright}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-07.eps}
-\vspace{\baselineskip}
-\begin{flushright}
-        \CMD{\$ git rebase master}
-\end{flushright}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-08.eps}
-\vspace{\baselineskip}
-\begin{flushright}
-        \CMD{\$ git rebase master}
-\end{flushright}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-09.eps}
-\vspace{\baselineskip}
-\begin{flushright}
-        \CMD{\$ git rebase master}
-\end{flushright}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-10.eps}
-\vspace{\baselineskip}
-\begin{flushright}
-        \CMD{\$ git rebase master}
-\end{flushright}
-\vspace{\textheight}
-\end{frame}
-
-% ---------------------------------------------------------------------
-\begin{frame}
-\frametitle{Rebasing - Different Branch}
-
-\includegraphics[width=\linewidth]{branch-vs-rebase-11.eps}
-\vspace{\textheight}
-\end{frame}
-
-% =====================================================================
 \mysubsection{Remotes}{using:remotes}
 
 % ---------------------------------------------------------------------
@@ -2419,6 +2213,212 @@ Scenario:
 \CMD{remote\$ git merge dummy} \\
 \CMD{remote\$ git branch -d dummy} \\
 
+\end{frame}
+
+% =====================================================================
+\mysubsection{Rebasing}{using:rebasing}
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing}
+
+\begin{itemize}
+        \item in existing branch
+        \vspace{.1\textheight}
+        \item from a different branch
+\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing}
+
+\begin{itemize}
+        \item you're rewriting history
+        \item Warning! Warning! Danger, Will Robinson!
+\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Existing Branch}
+
+\CMD{\$ git rebase -i HEAD tilda 7}
+\begin{itemize}
+        \item start rebase
+\end{itemize}
+
+\vspace{.05\textheight}
+\CMD{\$ git reset HEAD caret} \\
+\CMD{\$ git add -p} \\
+\CMD{\$ git commit -{}-amend}
+\begin{itemize}
+        \item do edits
+\end{itemize}
+
+\vspace{.05\textheight}
+\CMD{\$ git rebase -{}-continue}
+\begin{itemize}
+        \item keep going
+\end{itemize}
+
+\vspace{.05\textheight}
+\CMD{\$ git rebase -{}-abort}
+\begin{itemize}
+        \item made a mistake, start again...
+\end{itemize}
+
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\CMD{\$ git rebase <branch>} \\
+\begin{itemize}
+        \item moves new work onto a new baseline
+        \item can cause \red{conflicts} \\
+                \faint{ie: require user intervention}
+\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-01.eps}
+\vspace{\baselineskip}
+\begin{center}
+        take two identical trees
+\end{center}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-02.eps}
+\vspace{\baselineskip}
+\begin{flushleft}
+        \CMD{\$ git merge master}
+\end{flushleft}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-03.eps}
+\vspace{\baselineskip}
+\begin{center}
+        that's easy
+\end{center}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-03.eps}
+\vspace{\baselineskip}
+\begin{flushright}
+        \CMD{\$ git rebase master}
+\end{flushright}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-04.eps}
+\vspace{\baselineskip}
+\begin{flushright}
+        \CMD{\$ git rebase master}
+\end{flushright}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-05.eps}
+\vspace{\baselineskip}
+\begin{flushright}
+        \CMD{\$ git rebase master}
+\end{flushright}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-06.eps}
+\vspace{\baselineskip}
+\begin{flushright}
+        \CMD{\$ git rebase master}
+\end{flushright}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-07.eps}
+\vspace{\baselineskip}
+\begin{flushright}
+        \CMD{\$ git rebase master}
+\end{flushright}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-08.eps}
+\vspace{\baselineskip}
+\begin{flushright}
+        \CMD{\$ git rebase master}
+\end{flushright}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-09.eps}
+\vspace{\baselineskip}
+\begin{flushright}
+        \CMD{\$ git rebase master}
+\end{flushright}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-10.eps}
+\vspace{\baselineskip}
+\begin{flushright}
+        \CMD{\$ git rebase master}
+\end{flushright}
+\vspace{\textheight}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}
+\frametitle{Rebasing - Different Branch}
+
+\includegraphics[width=\linewidth]{branch-vs-rebase-11.eps}
+\vspace{\textheight}
 \end{frame}
 
 % =====================================================================
