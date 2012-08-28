@@ -329,9 +329,15 @@ This edit {Sonia Hamilton \href{mailto:sonia@snowfrog.net}{sonia@snowfrog.net}}}
 \begin{itemize}
         \item run in project workspace
         \item creates \CMD{.git} directory \\
-        \vspace{.1\textheight}
         \item later: bare and remote repos...
 \end{itemize}
+
+\CMD{\$ rsync -av repo.src/ repo.dst/}
+\begin{itemize}
+        \item unsure? Backup your local repo first \\
+        \vspace{.1\textheight}
+\end{itemize}
+
 \end{frame}
 
 % ---------------------------------------------------------------------
@@ -1218,7 +1224,6 @@ Hit return to start merge resolution tool (vimdiff):
 
 \begin{itemize}
         \item in existing branch
-        \vspace{.1\textheight}
         \item from a different branch
 \end{itemize}
 \end{frame}
@@ -1230,10 +1235,6 @@ Hit return to start merge resolution tool (vimdiff):
 \begin{itemize}
         \item you're rewriting history
         \item Warning! Warning! Danger, Will Robinson!
-        \vspace{.1\textheight}
-        \item backup your local repo first \\
-        \vspace{.1\textheight}
-\CMD{\$ rsync -av repo.src/ repo.dst/}
 \end{itemize}
 \end{frame}
 
@@ -1241,13 +1242,13 @@ Hit return to start merge resolution tool (vimdiff):
 \begin{frame}
 \frametitle{Rebasing - Existing Branch}
 
-\CMD{\$ git rebase -i HEAD tilda 7}
+\CMD{\$ git rebase -i HEAD~7}
 \begin{itemize}
         \item start rebase
 \end{itemize}
 
 \vspace{.05\textheight}
-\CMD{\$ git reset HEAD caret} \\
+\CMD{\$ git reset} \\
 \CMD{\$ git add -p} \\
 \CMD{\$ git commit -{}-amend}
 \begin{itemize}
@@ -1270,7 +1271,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \CMD{\$ git rebase <branch>} \\
 \begin{itemize}
@@ -1282,7 +1283,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-01.eps}
 \vspace{\baselineskip}
@@ -1294,7 +1295,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-02.eps}
 \vspace{\baselineskip}
@@ -1306,7 +1307,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-03.eps}
 \vspace{\baselineskip}
@@ -1318,7 +1319,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-03.eps}
 \vspace{\baselineskip}
@@ -1330,7 +1331,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-04.eps}
 \vspace{\baselineskip}
@@ -1342,7 +1343,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-05.eps}
 \vspace{\baselineskip}
@@ -1354,7 +1355,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-06.eps}
 \vspace{\baselineskip}
@@ -1366,7 +1367,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-07.eps}
 \vspace{\baselineskip}
@@ -1378,7 +1379,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-08.eps}
 \vspace{\baselineskip}
@@ -1390,7 +1391,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-09.eps}
 \vspace{\baselineskip}
@@ -1402,7 +1403,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-10.eps}
 \vspace{\baselineskip}
@@ -1414,7 +1415,7 @@ Hit return to start merge resolution tool (vimdiff):
 
 % ---------------------------------------------------------------------
 \begin{frame}
-\frametitle{Rebasing - Different Branch}
+\frametitle{Rebasing}
 
 \includegraphics[width=\linewidth]{branch-vs-rebase-11.eps}
 \vspace{\textheight}
