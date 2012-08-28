@@ -1128,6 +1128,31 @@ cannot switch branches.}
 \end{columns}
 \end{frame}
 
+% ---------------------------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Merging - Conflicts}
+
+\begin{columns}[t]
+        \begin{column}[T]{.5\textwidth}
+                {\small
+                \CMD{\$ git checkout one} \\
+                }
+        \end{column}
+        \begin{column}[T]{.5\textwidth}
+                \includegraphics[width=\linewidth]{merging-conflict-01.eps}
+        \end{column}
+\end{columns}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+\CMD{\$ git merge two}
+Auto-merging song.txt
+CONFLICT (content): Merge conflict in song.txt
+Automatic merge failed; fix conflicts and
+  then commit the result.
+\end{Verbatim}
+
+\end{frame}
+
 % =====================================================================
 \mysubsection{Rebasing}{using:rebasing}
 % ---------------------------------------------------------------------
