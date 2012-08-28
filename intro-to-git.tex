@@ -1175,6 +1175,38 @@ Automatic merge failed; fix conflicts and
 %\includegraphics[width=5cm]{merge-conflict.png}
         \end{column}
 \end{columns}
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Merging - Conflicts}
+
+\CMD{\$git config -{}-global merge.tool vimdiff}
+
+\vspace{.1\textheight}
+
+\CMD{\$ git mergetool}
+\begin{Verbatim}[commandchars=\\\{\}]
+Merging:
+song.txt
+
+Normal merge conflict for 'song.txt':
+  {local}: modified file
+  {remote}: modified file
+Hit return to start merge resolution tool (vimdiff):
+\end{Verbatim}
+
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Merging - Conflicts}
+
+\begin{center}
+%\includegraphics[width=60.0mm]{merge-tool.eps}
+\includegraphics[width=\linewidth]{merge-tool.eps}
+%\includegraphics[width=5cm]{merge-tool.png}
+\end{center}
 
 \end{frame}
 
