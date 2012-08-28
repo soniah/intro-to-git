@@ -2372,6 +2372,30 @@ Fred cannot push.
 \vspace{\textheight}
 \end{frame}
 
+% ---------------------------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Working with remotes}
+
+Scenario:
+\begin{itemize}
+        \item laptop - normal repo
+        \item want a bare repo, somewhere else \\
+        \item rsync?
+\end{itemize}
+
+\end{frame}
+
+% ---------------------------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Working with remotes}
+
+\CMD{remote\$ git init -{}-bare} \\
+\vspace{.1\textheight}
+\CMD{local\$ git remote add foo ...} \\
+\CMD{local\$ git push foo master}
+
+\end{frame}
+
 % =====================================================================
 \mysubsection{Inspection}{using:inspection}
 % ---------------------------------------------------------------------
